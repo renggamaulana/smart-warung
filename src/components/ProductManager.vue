@@ -9,7 +9,7 @@
   const currentId = ref(null)
 
   const satuanList = [
-      'per ons', '1/4 kg', '1/2 kg', '1 kg', 'ikat', 'butir', 'liter', 'bungkus'
+      'pcs', 'ikat', 'butir', 'liter', 'bungkus', 'per ons', '1/4 kg', '1/2 kg', '1 kg', 
   ]
 
   const colRef = collection(db, 'products')
@@ -90,6 +90,8 @@
         <option disabled value="">Pilih Kategori</option>
         <option value="sayuran & lauk pauk">Sayuran & Lauk Pauk</option>
         <option value="sembako">Sembako</option>
+        <option value="kebutuhan rumah tangga">Kebutuhan Rumah Tangga</option>
+        <option value="kebutuhan pribadi">Kebutuhan Pribadi</option>
       </select>
 
       <select
